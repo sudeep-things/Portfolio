@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Sudeep</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&family=Montserrat:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">Sudeep Singothu</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="about.html" class="active">About</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="education.html">Education</a>
+<a href="certifications.html">Certifications</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<button class="dark-btn" onclick="toggleDarkMode()">🌙</button>
+
+</nav>
+
+</header>
+
+
+
+<!-- ABOUT SECTION -->
+
+<main>
+
+<section class="page">
+
+<h1>About Me</h1>
+
+<p>
+I am <strong>Sudeep</strong>, a Computer Science student specializing in 
+<strong>Artificial Intelligence and Data Science</strong>.
+</p>
+
+<p>
+I am passionate about working with data and building intelligent solutions 
+using AI technologies. I enjoy developing projects that apply data analysis 
+and machine learning to solve real-world problems.
+</p>
+
+<p>
+My goal is to pursue a career as a <strong>Data Scientist</strong> and use 
+data to generate meaningful insights that help organizations make 
+better decisions.
+</p>
+
+</section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Sudeep | Data Analyst</p>
+
+</footer>
+
+
+
+<script>
+
+/* DARK MODE */
+
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("darkMode","enabled");
+}else{
+localStorage.setItem("darkMode","disabled");
+}
+
+}
+
+if(localStorage.getItem("darkMode")==="enabled"){
+document.body.classList.add("dark");
+}
+
+</script>
+
+
+</body>
+</html>
