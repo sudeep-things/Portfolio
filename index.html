@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sudeep | Data Analyst</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&family=Montserrat:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">Sudeep Singothu</div>
+
+<div class="nav-links">
+
+<a href="index.html" class="active">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="education.html">Education</a>
+<a href="certifications.html">Certifications</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<button class="dark-btn" onclick="toggleDarkMode()">🌙</button>
+
+</nav>
+
+</header>
+
+
+
+<main>
+
+<section class="hero">
+
+<img src="profile.jpeg" alt="Sudeep Profile Photo" class="profile">
+
+<h1>Sudeep</h1>
+
+<h2 id="typing"></h2>
+
+<p class="tagline">
+Turning Data into Actionable Insights
+</p>
+
+<a href="projects.html" class="btn">
+View My Projects
+</a>
+
+</section>
+
+</main>
+
+
+
+<footer>
+<p>© 2026 Sudeep | Data Analyst</p>
+</footer>
+
+
+
+<script>
+
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("darkMode","enabled");
+}else{
+localStorage.setItem("darkMode","disabled");
+}
+
+}
+
+if(localStorage.getItem("darkMode")==="enabled"){
+document.body.classList.add("dark");
+}
+
+
+
+const text = "Data Analyst | AI Enthusiast";
+let index = 0;
+
+function typeEffect(){
+
+if(index < text.length){
+
+document.getElementById("typing").innerHTML += text.charAt(index);
+
+index++;
+
+setTimeout(typeEffect,70);
+
+}
+
+}
+
+typeEffect();
+
+</script>
+
+</body>
+</html>
