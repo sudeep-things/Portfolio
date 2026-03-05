@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projects | Sudeep</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&family=Montserrat:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">Sudeep Singothu</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html" class="active">Projects</a>
+<a href="education.html">Education</a>
+<a href="certifications.html">Certifications</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<button class="dark-btn" onclick="toggleDarkMode()">🌙</button>
+
+</nav>
+
+</header>
+
+
+
+<!-- PROJECTS SECTION -->
+
+<main>
+
+<section class="page">
+
+<h1>Projects</h1>
+
+<div class="projects">
+
+
+<!-- Project 1 -->
+
+<div class="card">
+
+<img src="images/project1.png" class="project-img">
+
+<h3>Sales Data Dashboard</h3>
+
+<p>
+Power BI dashboard analyzing sales trends and performance.
+</p>
+
+<a href="https://github.com/sudeep-things" class="btn">View Code</a>
+
+</div>
+
+
+
+<!-- Project 2 -->
+
+<div class="card">
+
+<img src="images/project2.png" class="project-img">
+
+<h3>Customer Churn Analysis</h3>
+
+<p>
+Python project predicting customer churn using machine learning.
+</p>
+
+<a href="https://github.com/sudeep-things" class="btn">View Code</a>
+
+</div>
+
+
+
+<!-- Project 3 -->
+
+<div class="card">
+
+<img src="images/project3.png" class="project-img">
+
+<h3>Netflix Data Visualization</h3>
+
+<p>
+Exploratory data analysis of Netflix dataset using Python.
+</p>
+
+<a href="https://github.com/sudeep-things" class="btn">View Code</a>
+
+</div>
+
+
+
+<!-- Project 4 -->
+
+<div class="card">
+
+<img src="images/project4.png" class="project-img">
+
+<h3>AI Prompt Experiments</h3>
+
+<p>
+Testing prompt engineering techniques for AI models.
+</p>
+
+<a href="https://github.com/sudeep-things" class="btn">View Code</a>
+
+</div>
+
+
+
+<!-- Project 5 -->
+
+<div class="card">
+
+<img src="images/project5.png" class="project-img">
+
+<h3>Salaar</h3>
+
+<p>
+Coming Soon Bruhh.
+</p>
+
+<a href="https://github.com/sudeep-things" class="btn">View Code</a>
+
+</div>
+
+
+<!-- Project 6 -->
+
+<div class="card">
+
+<img src="images/project6.png" class="project-img">
+
+<h3>Project 6</h3>
+
+<p>
+Coming Soonn Bruhh.
+</p>
+
+<a href="https://github.com/sudeep-things" class="btn">View Code</a>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Sudeep | Data Analyst</p>
+
+</footer>
+
+
+
+<script>
+
+/* DARK MODE */
+
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+localStorage.setItem("darkMode","enabled");
+}else{
+localStorage.setItem("darkMode","disabled");
+}
+
+}
+
+if(localStorage.getItem("darkMode")==="enabled"){
+document.body.classList.add("dark");
+}
+
+</script>
+
+
+</body>
+</html>
